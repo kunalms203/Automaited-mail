@@ -4,23 +4,8 @@ require("dotenv").config();
 
 // Email list
 const recipients = [
-  { name: "Sayali", email: "sayali@ioweb3.io" },
-  { name: "Sayali", email: "sayali.sarvade94@gmail.com" },
-  { name: "Rupali", email: "rupali@ioweb3.io" },
-  { name: "Rupali", email: "rupalimagar7777@gmail.com" },
-  { name: "Nikhil", email: "deshmukhniks1998@gmail.com" },
-  { name: "Sushma", email: "sushma@ioweb3.io" },
-  { name: "Sushma", email: "patilsushma087@gmail.com" },
-  { name: "Shraddha", email: "shraddha@ioweb3.io" },
-  { name: "Shraddha", email: "khandreshraddha19@gmail.com" },
-  { name: "Prajakta", email: "prajakta@ioweb3.io" },
-  { name: "Prajakta", email: "prajaktashinde6102@gmail.com" },
-  { name: "Akash", email: "akash@ioweb3.io" },
-  { name: "Akash", email: "akashrajmane93@gmail.com" },
-  { name: "Swapnil", email: "swapnil@ioweb3.io" },
-  { name: "Swapnil", email: "swapnilnrl99@gmail.com" },
-  { name: "Hiring Manager", email: "info@technoartz.com" },
-  { name: "Sandip", email: "sandipkgadekar@gmail.com" },
+  { name: "Arzoo", email: "arzoo@wednesday.is" },
+  { name: "Shubhangi Mathur", email: "shubhangi.mathur@wednesday.is" },
 ];
 
 
@@ -44,8 +29,8 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 // Send emails with delay
 const sendEmails = async () => {
   for (const { name, email } of recipients) {
-    const jobTitle = "Full Stack Developer - Javascript Framework";
-    const companyName = "IOWeb3 Technologies";
+    const jobTitle = "Junior Full Stack Developer (Pune)";
+    const companyName = "Stackfusion Private Limited";
 
     const mailOptions = {
       from: '"Kunal Shinde" <kunalms203@gmail.com>',

@@ -4,39 +4,41 @@ require("dotenv").config();
 
 // Email list
 const recipients = [
-  { name: "Mridula", email: "mridula.vasu@cscglobal.com" },
-  { name: "Mridulla", email: "mridulla.91@gmail.com" },
-  { name: "Prachi", email: "prachi.pandey@cscglobal.com" },
-  { name: "Prachi", email: "prachi1984@gmail.com" },
-  { name: "Manisha", email: "s-manisha@musgravegroup.com" },
-  { name: "Manisha", email: "manisharma.1511@gmail.com" },
-  { name: "Moni", email: "moni.borah@cscglobal.com" },
-  { name: "Hanna", email: "hanna.ponnu@cscglobal.com" },
-  { name: "Hanna", email: "hannaofficial97@gmail.com" },
-  { name: "Aarti", email: "aarti.paruleker@intertrustgroup.com" },
-  { name: "Aarti", email: "paruleker.aarti15@gmail.com" },
-  { name: "Sindhu", email: "sindhu.r@cscglobal.com" },
-  { name: "Sindhu", email: "sindhu91.r@gmail.com" },
-  { name: "Vasundhara", email: "vasundhara.shukla@cscglobal.com" },
-  { name: "Nikki", email: "nikkishukla7@gmail.com" },
-  { name: "Rachel", email: "rachel.ramesh@cscglobal.com" },
-  { name: "Rachel", email: "rachel.raaga@gmail.com" },
-  { name: "Shivakumar", email: "g.shivakumar4216@gmail.com" },
-  { name: "Vineet", email: "vineet.pandey@cscglobal.com" },
-  { name: "Vineet", email: "vineet.panday650@gmail.com" },
-  { name: "Vikas", email: "vikaschandra0102@gmail.com" },
-  { name: "Luis", email: "luis.chagas@cscglobal.com" },
-  { name: "Luis", email: "contato@luischagas.dev" },
-  { name: "Rajan", email: "rajan.arjun@gmail.com" },
-  { name: "Kang", email: "kang.guo@cscglobal.com" },
-  { name: "Guo", email: "guokang@hotmail.com" },
-  { name: "Mohan", email: "mohan.babu@cscglobal.com" },
-  { name: "Mohan", email: "mohanbabum02@gmail.com" },
-  { name: "Usman", email: "usman.naqvi@cscglobal.com" },
-  { name: "Usman", email: "usman_naqvi89@hotmail.com" },
-  { name: "Sharsh", email: "sharsh0702@gmail.com" },
-  { name: "Harish", email: "harishhosmat@gmail.com" }
+  { name: "Reena Sinha", email: "reena.sinhapr@kaplan.edu" },
+  { name: "Kavya N", email: "kavya.n@kaplan.com" },
+  { name: "Nithin Jadhav", email: "nithin.jadhav@kaplan.com" },
+  { name: "Ruchi Sinha", email: "ruchi.sinha@kaplan.com" },
+  { name: "Vinitha M", email: "vinitha.m@kaplan.com" },
+  { name: "Neha Agarwal", email: "neha.agarwal@kaplan.com" },
+  { name: "Swarna Mekhla", email: "swarna.mekhla@kaplan.com" },
+  { name: "Anchal Vaish", email: "anchal.vaish@kaplan.com" },
+  { name: "Keerthana Bhat", email: "keerthana.bhat@kaplan.com" },
+  { name: "Naveed", email: "naveed@kaplan.com" },
+  { name: "Shakil Khan", email: "shakil.khan@kaplan.com" },
+  { name: "Sireesha Vysyaraju", email: "sireesha.vysyaraju@kaplan.com" },
+  { name: "Quyen Ho", email: "quyen.ho@kaplan.com" },
+  { name: "Abhishek Ramaswamy", email: "abhishek.ramaswamy@kaplan.com" },
+  { name: "Brian Lingen", email: "brian.lingen@kaplan.com" },
+  { name: "Chad Marino", email: "chad.marino@kaplan.com" },
+  { name: "Ernie Castruita", email: "ernie.castruita@kaplan.com" },
+  { name: "Dan Corley", email: "dan.corley@kaplan.com" },
+  { name: "Jon Heinert", email: "jon.heinert@kaplan.com" },
+  { name: "Kelly Pyatt", email: "kelly.pyatt@kaplan.com" },
+  { name: "Nina Deng", email: "nina.deng@kaplan.com" },
+  { name: "Ozerk Gogus", email: "ozerk.gogus@kaplan.com" },
+  { name: "Leon Gersing", email: "leon.gersing@kaplan.com" },
+  { name: "Kyt Gonzales", email: "kyt.gonzales@kaplan.com" },
+  { name: "Matthew Morey", email: "matthew.morey@kaplan.com" },
+  { name: "Kristy Whitcomb", email: "kristy.whitcomb@kaplan.com" },
+  { name: "Dylan Banter", email: "dylan.banter@kaplan.com" },
+  { name: "Caroline Fairhurst", email: "caroline.fairhurst@kaplan.com" },
+  { name: "Kristi Haney", email: "kristi.haney@kaplan.com" },
+  { name: "Eddie Jackson", email: "eddie.jackson@kaplan.com" },
+  { name: "Lyon", email: "lyon@kaplan.com" },
+  { name: "Nyphen Sanders", email: "nyphen.sanders@kaplan.com" },
+  { name: "Kaplan Inc", email: "kaplan.inc@kaplan.com" },
 ];
+
 
 
 // Email transporter
@@ -57,22 +59,22 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 // Send emails with delay
 const sendEmails = async () => {
   for (const { name, email } of recipients) {
-    const jobTitle = "Associate Software Engineer";
-    const jobLocation = "Bangalore, India";
-    const jobId = "12068";
-    const jobLink = "https://hczw.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/12068";
-    const companyName = "CSC";
+    const jobTitle = "Associate Software Engineer (Internship Program to Full-time Employee)";
+    const jobLocation = "Bangalore, KA, India";
+    const jobId = "JR248715";
+    const jobLink = "https://ghc.wd1.myworkdayjobs.com/en-US/Kaplan_Careers/job/Associate-Software-Engineer--Internship-Program-to-Full-time-Employee-_JR248715-1";
+    const companyName = "Kaplan";
 
     const mailOptions = {
       from: '"Kunal Shinde" <kunalms203@gmail.com>',
       to: email,
-      subject: `Referral Request for ${jobTitle} (${jobLocation}) - Kunal Shinde`,
+      subject: `Referral Request for ${jobTitle} (${jobId}) - Kunal Shinde`,
       html: `
         <p>Dear ${name},</p>
 
         <p>I hope you're doing well!</p>
 
-        <p>I am reaching out to kindly request a referral for the position of <b>${jobTitle}</b> at <b>${companyName}</b>, located in <b>${jobLocation}</b> (Job ID: <b>${jobId}</b>). I came across this opportunity through your organization and am highly enthusiastic about applying for it. You can find more details here: <a href="${jobLink}">${jobLink}</a>.</p>
+        <p>I am reaching out to kindly request a referral for the position of <b>${jobTitle} (Job id - JR248715)</b> at <b>${companyName}</b>, located in <b>${jobLocation}</b>. I came across this opportunity through your organization and am highly enthusiastic about applying for it. You can find more details here: <a href="${jobLink}">${jobLink}</a>.</p>
 
         <p>As a recent B.E. graduate in Artificial Intelligence & Machine Learning from Sahyadri Valley College of Engineering, Pune, and with hands-on full stack experience during my internship at Logion Solutions, I am confident I can contribute meaningfully to your team.</p>
 
