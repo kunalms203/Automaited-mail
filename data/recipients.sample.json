@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Sarah Connor",
+    "email": "sarah.connor@example.com",
+    "companyName": "Cyberdyne Systems",
+    "jobTitle": "Full Stack Engineer",
+    "jobId": "CS-2026-9",
+    "jobLink": "https://example.com/careers/cs-2026",
+    "jobLocation": "Pune, India"
+  },
+  {
+    "name": "Alex Murphy",
+    "email": "alex.murphy@example.com",
+    "companyName": "Omni Corp",
+    "jobTitle": "Junior Software Engineer",
+    "jobId": "OC-4412",
+    "jobLink": "https://example.com/careers/oc-4412",
+    "jobLocation": "Bangalore, India"
+  }
+]

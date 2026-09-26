@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #24292e;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    p {
+      margin-bottom: 14px;
+    }
+    .signature {
+      margin-top: 24px;
+      border-top: 1px solid #e1e4e8;
+      padding-top: 16px;
+      color: #444d56;
+    }
+    .signature strong {
+      color: #24292e;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Hi {{name}},</p>
+
+    <p>I hope you're having a productive week.</p>
+
+    <p>I've been closely following the work being done at <strong>{{companyName}}</strong> and am really impressed by your team's engineering innovations. I am reaching out to introduce myself as a Full Stack Engineer with expertise in React, Node.js, Express, and modern cloud databases.</p>
+
+    <p>With a degree in Artificial Intelligence & Machine Learning and hands-on industry experience building performant web applications, I'm actively exploring software engineering opportunities where I can contribute to shipping clean, reliable code and solving challenging problems.</p>
+
+    <p>I've attached my resume for quick review. Would you be open to a brief 10-minute chat sometime next week to discuss potential opportunities or advice for joining {{companyName}}?</p>
+
+    <p>Either way, thanks for taking the time to read this!</p>
+
+    <div class="signature">
+      <p>Best regards,<br>
+      <strong>{{candidateName}}</strong><br>
+      Email: <a href="mailto:{{candidateEmail}}">{{candidateEmail}}</a><br>
+      Phone: {{candidatePhone}}<br>
+      LinkedIn: <a href="{{candidateLinkedIn}}" target="_blank">{{candidateLinkedIn}}</a><br>
+      GitHub: <a href="{{candidateGitHub}}" target="_blank">{{candidateGitHub}}</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

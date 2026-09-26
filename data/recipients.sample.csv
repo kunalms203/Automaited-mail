@@ -1,0 +1,4 @@
+name,email,companyName,jobTitle,jobId,jobLink,jobLocation
+"John Doe",john.doe@example.com,"TechCorp","Full Stack Developer","REQ-10492","https://example.com/careers/job10492","Pune, India"
+"Jane Smith",jane.smith@example.com,"Innovate Inc","Associate Software Engineer","JR-8821","https://example.com/careers/job8821","Bangalore, India"
+"Recruiting Team",talent@example.com,"CloudScale","Frontend Engineer (React)","DEV-402","https://example.com/jobs/402","Remote"

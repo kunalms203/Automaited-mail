@@ -1,2 +1,21 @@
+# Environment variables
 .env
-node_modules
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Logs and Sent History
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+bun.lockb
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Attachments (optional: uncomment to ignore custom resumes)
+# attachments/*

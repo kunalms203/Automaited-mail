@@ -1,17 +1,30 @@
 {
-  "name": "mail",
-  "version": "1.0.0",
+  "name": "automated-mail-sender",
+  "version": "2.0.0",
+  "description": "Production-grade automated email dispatcher for job applications and referral requests with rate-limiting, deduplication, and multi-auth support.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dry-run": "node index.js --dry-run",
+    "send:application": "node index.js",
+    "send:referral": "node refferals.js",
+    "send:referral:dry-run": "node refferals.js --dry-run",
+    "send:referral-oauth": "node refferal2.js",
+    "test:dry-run": "node index.js --dry-run --file data/recipients.sample.csv"
   },
-  "author": "",
+  "keywords": [
+    "nodemailer",
+    "email-automation",
+    "job-application",
+    "referral-request",
+    "oauth2",
+    "rate-limiting"
+  ],
+  "author": "Kunal Shinde",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "dotenv": "^16.6.1",
     "googleapis": "^154.1.0",
-    "nodemailer": "^7.0.5",
-    "path": "^0.12.7"
+    "nodemailer": "^7.0.5"
   }
 }
